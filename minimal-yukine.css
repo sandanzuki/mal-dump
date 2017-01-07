@@ -1,0 +1,170 @@
+/*
+theme by sandanzuki@myanimelist.net
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800);
+
+/* all links */
+a {
+  color: #597ea3;
+  text-decoration: none;
+}
+
+/* link hover colour
+a:hover {
+  color: #b5cce2;
+}
+*/
+ 
+body {
+  background: #fafafa;
+  position: relative;
+  background-image: url('img/yukine.png');
+  background-repeat: no-repeat;
+  background-position: 10% 70%;
+  background-size: 20%;
+  background-attachment: fixed;
+}
+
+/* main container */
+#list_surround {
+  background: #fafafa;
+  position: relative;
+  overflow-y: auto;
+  font-family: calibri;
+  font-size: 12px;
+}
+
+/* navi (menu for watching, completed, etc.) */
+.status_selected, .status_not_selected {
+  background: #fafafa;
+  position: fixed;
+  left: 0;
+  height: 18px;
+  width: 150px;
+  border-right: 1px solid #dddddd;
+  display: block;
+  font-family: calibri;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.status_selected a:hover, .status_not_selected a:hover {
+  font-weight: bold;
+}
+
+/* current selection */
+.status_selected a {
+  color: #565656;
+  font-weight: bold;
+}
+
+.status_selected:first-of-type, .status_not_selected:first-of-type {
+  border-top: 1px solid #dddddd;
+  bottom: 131px;
+}
+
+.status_selected:nth-of-type(2), .status_not_selected:nth-of-type(2) {
+  bottom: 113px;
+}
+
+.status_selected:nth-of-type(3), .status_not_selected:nth-of-type(3) {
+  bottom: 95px;
+}
+
+.status_selected:nth-of-type(4), .status_not_selected:nth-of-type(4) {
+  bottom: 77px;
+}
+
+.status_selected:nth-of-type(5), .status_not_selected:nth-of-type(5) {
+  bottom: 59px;
+}
+
+.status_selected:last-of-type, .status_not_selected:last-of-type {
+  border-bottom: 1px solid #dddddd;
+  bottom: 40px;
+}
+
+/* hide totals */
+#grand_totals, .category_totals {
+  display: none;
+}
+
+/* list position */
+#list_surround {
+  position: relative;
+  left: 33%;
+  width: 700px;
+}
+
+/* all categories (watching, completed, etc.)*/
+[class^=header_] {
+  margin-top: 10px;
+  margin-right: 100%;
+  white-space: nowrap;
+}
+
+.header_title {
+  padding: 10px 0 0;
+  color: #565656;
+  font-family: "Alegreya Sans SC", calibri;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* column headers */
+.table_headerLink, .table_headerLink:hover {
+  color: #565656;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* highlight table header */
+tr .table_header {
+  background-color: #b5cce2 !important;
+}
+
+/* rows */
+
+/* alternating background colours -----
+.td1 {
+  background-color: #e2ecf6;
+}
+
+.td2 {
+  background-color: #fafafa;
+}
+/* ----- */
+
+.td1, .td2, .animetitle {
+  color: #565656;
+  font-size: 14px;
+}
+
+/* hide anime options */
+[style^="float: right"] {
+  display: none;
+}
+
+/* highlight row when hover */
+tr:hover [class^=td]{
+  background-color: #85a6c5 !important;
+  font-weight: bold;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar-track {background-color: #85a6c5; border: 3px solid #ffffff;}
+::-webkit-scrollbar-thumb {background-color: #85a6c5; border: 2px solid #ffffff;}
+::-webkit-scrollbar {width: 7px; height: 5px;}   
+
+/* copyrights */
+#copyright {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  color: #565656;
+  font-family: calibri;
+  font-size: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
